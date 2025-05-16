@@ -1,0 +1,20 @@
+Centered Box Layout with Responsive Design
+This project showcases a centered container box with responsive design techniques using Flexbox, Media Queries, and Mobile-First design principles. The design adapts to various screen sizes, providing an optimized experience across devices.
+
+Features
+A centered container that adjusts its content dynamically.
+
+Responsive typography and padding for mobile and desktop screens.
+
+Clean design with rounded corners, subtle shadows, and a modern layout.
+
+Technologies Used
+HTML - Structure of the page.
+
+CSS - Styling and layout.
+
+Flexbox - For centering elements both vertically and horizontally.
+
+Media Queries - To make the design responsive for various screen sizes.
+
+Mobile-First Approach - Ensures the design is optimized for small screens first
