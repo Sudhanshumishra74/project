@@ -1,148 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: ;
+/* ========== Base Styling ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-#main{
-    height: 650px;
-    width: 400px;
-    display: flex;
-    background-color: hsl(0, 0%, 20%);
-    border-radius: 10px;
-    align-items: center;
-    
-    flex-direction: column;
-    
-    
-    
+/* ========== Main Container ========== */
+#main {
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-img{
-    display: flex;
-    height: 90px;
-    width: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 50px;
-    
-    
-
+/* ========== Image Styling ========== */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
-
- h2 {
-margin-top: 10px;
-color: hsl(0, 0%, 100%);
-font-weight: 700;
-font-size: xx-large;
-
+/* ========== Text Styling ========== */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-#add{
-    color: hsl(75, 94%, 57%);
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: larger;
-}
-p{
-    color: white;
-    margin-top: 20px;
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.div{
-    display: flex;
-    margin-top: 20px;
- height: 50px;
-    width: 300px;
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: hsl(0, 0%, 12%);
-justify-content: center;
-
+h3 {
+  color: hsl(14, 45%, 36%);
+  margin-top: 30px;
+  font-size: 1.3rem;
 }
 
-.div a{
-    
-    text-decoration: none;
-
-}
-.div:focus,
-.div:hover{
-     background-color: hsl(75, 94%, 57%);
+/* ========== Section Box ========== */
+#sec {
+  background-color: hsl(330, 100%, 98%);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-/* Mobile - 375px */
-@media (max-width: 375px) {
-    #main {
-        width: 90%;
-        height: auto;
-        padding: 20px 0;
-    }
-
-    img {
-        height: 70px;
-        width: 70px;
-        margin-top: 30px;
-    }
-
-    h2 {
-        font-size: x-large;
-    }
-
-    #add {
-        font-size: medium;
-    }
-
-    p {
-        font-size: small;
-        margin: 15px;
-        text-align: center;
-    }
-
-    .div {
-        width: 80%;
-        font-size: medium;
-        height: 45px;
-    }
+/* ========== List Styling ========== */
+ul, ol {
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
-/* Desktop - 1440px */
-@media (min-width: 1440px) {
-    #main {
-        width: 400px;
-        height: 650px;
-    }
+ul li, ol li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
 
-    img {
-        height: 90px;
-        width: 90px;
-        margin-top: 50px;
-    }
+/* ========== Divider ========== */
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
 
-    h2 {
-        font-size: xx-large;
-    }
+/* ========== Table Styling ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
 
-    #add {
-        font-size: larger;
-    }
+th, td {
+  padding: 12px;
+  text-align: left;
+}
 
-    .div {
-        width: 300px;
-        font-size: larger;
-        height: 50px;
-    }
+td {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/* ========== Responsive Fix ========== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p, ul, ol, li {
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
 }
